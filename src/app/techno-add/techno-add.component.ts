@@ -1,15 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-techno-add',
+  selector: 'techno-form',
   templateUrl: './techno-add.component.html',
   styleUrls: ['./techno-add.component.css']
 })
-export class TechnoAddComponent implements OnInit {
+export class TechnoAddComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  log(x: any) {
+    console.log(x);
   }
-
 }
