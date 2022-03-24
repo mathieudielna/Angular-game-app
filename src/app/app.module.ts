@@ -10,6 +10,8 @@ import { SearchBarComponent } from './compenents/search-bar/search-bar.component
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from "@angular/material/select";
 import {AppRoutingModule} from "./app-routing.module";
+import {MatTabsModule} from "@angular/material/tabs";
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import {AppRoutingModule} from "./app-routing.module";
     FormsModule,
     MatFormFieldModule,
     MatSelectModule,
+    MatTabsModule,
+    MatIconModule,
     AppRoutingModule,
   ],
   providers: [],
