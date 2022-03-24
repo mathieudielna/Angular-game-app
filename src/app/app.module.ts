@@ -12,6 +12,7 @@ import {MatSelectModule} from "@angular/material/select";
 import {AppRoutingModule} from "./app-routing.module";
 import {MatTabsModule} from "@angular/material/tabs";
 import {MatIconModule} from "@angular/material/icon";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import {MatIconModule} from "@angular/material/icon";
     MatTabsModule,
     MatIconModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
