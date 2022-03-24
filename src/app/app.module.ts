@@ -3,29 +3,27 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { TechnoAddComponent } from './techno-add/techno-add.component';
+import { HomeComponent } from './compenents/home/home.component';
+import { TechnoAddComponent } from './compenents/techno-add/techno-add.component';
 import {FormsModule} from "@angular/forms";
+import { SearchBarComponent } from './compenents/search-bar/search-bar.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from "@angular/material/select";
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TechnoAddComponent
+    TechnoAddComponent,
+    SearchBarComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([
-      {
-        path: '',
-        component: HomeComponent
-      },
-      {
-        path: 'techno',
-        component: TechnoAddComponent
-      }
-    ]),
-    FormsModule
+    FormsModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
